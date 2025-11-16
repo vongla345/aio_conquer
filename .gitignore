@@ -1,0 +1,37 @@
+
+.vscode/
+
+.idea/
+
+
+*.sublime-workspace
+
+
+.atom/
+packages/
+
+
+.project
+.classpath
+.settings/
+-----------------------
+# NetBeans
+nbproject/
+build/
+dist/
+
+
+*[.swp]
+*[.swo]
+*~
+*.bak
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
