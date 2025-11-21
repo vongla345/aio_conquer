@@ -12,8 +12,13 @@
 ## 2.2. Công thức
 Cho một tập hợp điểm dữ liệu với $N$ đặc trưng và $m$ lớp. Chúng ta sẽ vectơ hóa dữ liệu đầu vào và đầu ra để thuận tiện ký hiệu, tính toán, và lập trình. 
 
+<figure>
+    <img src="softmax_regression_forward_propagation.png" alt="forward propagation for softmax regression">
+    <figcaption>Hình minh họa lan truyền xuôi với logit và hàm softmax trong mô hình hồi quy softmax</figcaption>
+</figure>
+
 ### 2.2.1. Điểm số thô - Logits
-Như vậy, ta cơ bản đã hiểu ý tưởng của các điểm số thô và vai trò của chúng trong hồi quy softmax. Vậy logits được thực sự đưa vào mô hình như thế nào? Chúng ta sẽ cùng xây biểu thức toán học cho logits theo từng bước cụ thể như sau. 
+Ta cơ bản đã hiểu ý tưởng của các điểm số thô và vai trò của chúng trong hồi quy softmax. *Vậy logits được thực sự đưa vào mô hình như thế nào?* Chúng ta sẽ cùng xây biểu thức toán học cho logits theo từng bước cụ thể như sau. 
 
 - **Một mẫu, một lớp:** 
 
@@ -136,7 +141,10 @@ Trước khi kết thúc phần này, hãy cùng điểm lại một vài lưu �
 - **Quan hệ phi tuyến:**
     Hồi quy softmax là mô hình một tầng/lớp với hàm giả thuyết là phép biến đổi tuyến tính. Tính chất này khiến cho mô hình nhạy cảm với các ngoại lệ (outliers) cũng như khó xử lý mối quan hệ phi tuyến tính một cách hiệu quả. Để giải quyết vấn đề này, ta cần có dạng mạng nhiều tầng như Multilayer Perceptron (MLP).
 
-<!-- # 2. Softmax Regression 
+
+
+<!-- 
+# 2. Softmax Regression 
 
 ## 2.1. Main Idea
 - Softmax Regression, which handles multi-class classification problems, is a generalization of logistic regression. Instead of using the sigmoid function, softmax regression employs the softmax function to turn raw scores into an explicit probability distribution across all classes. 
@@ -149,6 +157,11 @@ Trước khi kết thúc phần này, hãy cùng điểm lại một vài lưu �
 
 ## 2.2. Formula
 Consider a dataset of $N$ features and $m$ classes. For mathematical convenience and more efficient computation, we'll vectorize input and output.
+
+<figure>
+    <img src="softmax_regression_forward_propagation.png" alt="forward propagation for softmax regression">
+    <figcaption>Forward propagation with raw scores/logits and softmax function in Softmax Regression</figcaption>
+</figure>
 
 ### 2.2.1. Raw Scores (Logits)
 - We understand the idea of raw scores and their contribution to softmax regression. The question now is how these logits technically fit into the model. Let's formalize the mathematical defintion of logits.
@@ -273,5 +286,5 @@ Before we wrap up this section, here are a few key notes about the softmax regre
 
 - **Non-linear relationship:**
     Softmax regression is a single-layered model with the hypothesis function being a linear transformation. Thus, it not only can be sensitive to outliers but struggles handling non-linear relationship efficiently as well. This is when Multilayer Perceptron (MLP) comes into play. 
- -->
- 
+
+  -->
